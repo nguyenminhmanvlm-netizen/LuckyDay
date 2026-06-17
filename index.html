@@ -6,7 +6,12 @@
     <style>
 
         body{
-            background-color: lightblue;
+            background: linear-gradient(
+            135deg,
+             #ffd6e7,
+             #e0c3fc );
+
+            min-height:100vh;
             text-align:center;
             font-family:Arial;
             margin-top:100px;
@@ -17,22 +22,72 @@
         }
 
         button{
-            padding:10px;
-            margin-left:10px;
-        }
 
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    background:#8b5cf6;
+
+    color:white;
+        }
+        #card{
+    width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+  #result{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    background:#FFF5F7;
+    color: #e0c3fc;
+}
+#result{
+    animation:fadeIn 0.6s;
+}
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+  
+   h1{color:#6c4ab6;
+    font-size:28px;}
+  h2{color :#8EC5FC;
+    font-size:20px;}
+  #maumot { color :#F3E8FF; }
     </style>
     
 </head>
 
 <body>
-
+<div id="card">
     <h1> A Message From The Universe </h1>
     <p>Cac ban nhap ten ben duoi nhee!:</p>
     <p>LUU Y!!: khong cach & khong dau nhe)</p>
-    <p> Vi du: TrinhTranPhuongTuan</p>
+    <p> Vi du: SonTungMTP </p>
   <input id="name">
-
+</div>
 <button onclick="showMessage()">
     Xem ket qua
 </button>
@@ -47,10 +102,10 @@ function showMessage() {
     if (name == "PhamThiYenNgoc" )
     {
         document.getElementById("result").innerHTML =
-        " <h2> Wow, chuc mung ban!</h2> " 
-        + "<h3>Ban la mot trong nhung nguoi may man nhat!<h/3>"
-        + "<h4> Ban nhan duoc 1 phan qua cua bon tui!</h4>"
-        + " Lien he voi bon tui nhe! Cam on ban!^^";
+         "<h2>🎉 Wow, chuc mung ban!</h2>"
+        + "<p>Ban la mot trong nhung nguoi may man nhat!"
+        + "<p> Ban nhan duoc 1 phan qua cua bon tui!</p>"
+        +  "<p> Lien he voi bon tui nhe! Cam on ban!^^</p>"
     }
     else{
         
