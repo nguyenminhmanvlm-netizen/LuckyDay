@@ -57,7 +57,7 @@
     border-radius:15px;
 
     background:#FFF5F7;
-    color: #e0c3fc;
+    color: #F59E0B;
 }
 #result{
     animation:fadeIn 0.6s;
@@ -73,8 +73,12 @@
   
    h1{color:#6c4ab6;
     font-size:28px;}
-  h2{color :#8EC5FC;
+   h2{color :#8EC5FC;
     font-size:20px;}
+   h3{color:#C4B5FD;
+    font-size:18px;}
+   h4{color:#8b5cf6 ;
+    font-size:18px;}
   #maumot { color :#F3E8FF; }
     </style>
     
@@ -102,17 +106,59 @@ function showMessage() {
     if (name == "PhamThiYenNgoc" )
     {
         document.getElementById("result").innerHTML =
-         "<h2>🎉 Chuc mung ban!</h2>"
-        + "<p> Ban rat dac biet!"
-        + "<p> Nen bon tui se tang ban mot mon qua nho nho!</p>"
-        +  "<p> Lien he voi bon tui nhe! Cam on ban!^^</p>"
+         "<p> Ten cua ban nghe hay ghe a!^^</p>"
+        + "<p> Chuc Ngoc 1 ngay vui ve</p>"
+        + "<h3> Ban thu nhap lai ten nay nhe:</h3><h4>Loki</h4>"
+    }
+    else if(name == "NguyenDuyLuan")
+    {document.getElementById("result").innerHTML =
+    "<p> Cai ten qua quen thuoc voi toi!</p>"
+    +"<p> Rieng ban, tui k chut 1 ngay vv</p>"
+   +"<p> Ma chuc b biet lang nghe ng khac 1 xiu</p>"
+   + "<h3> Ban thu nhap lai ten nay dum tui:</h3><h4>Loki</h4"
+    }
+    else if(name == "HuynhNhu")
+{ document.getElementById("result").innerHTML =
+    "<p> Ten ban co 2 chu thoi ha!^^</p>"
+   + "<p> Chuc ban Nhu 1 ngay vui ve! </p> "
+   + "<h3>Ban thu nhap lai ten nay nhe:</h3><h4>Loki</h4>"}
+    else if(name == "HuynhQuocBao")
+   { document.getElementById("result").innerHTML =
+    "<p> Hihi, nghe ten la biet manh me roi! </p>"
+    +"<p> Chuc ban Bao 1 ngay vui ve! </p> "
+   + "<h3> Ban thu nhap lai ten nay nhe:</h3><h4>Loki</h4>"
+   }
+    else if(name == "Loki")
+
+    {
+        document.getElementById("result").innerHTML =
+        "<p> Hihi, xin chao!! Tui muon chia se vai dieu nayy>_<</p> "
+      + "<p> Day chi la 1 cai web don gian thoi!"
+      + "<p> Nhung day la uoc mo cua tui sau nay a!</p>"
+      + "<p> Chi la y tuong don gian cua tui thoi</p>"
+      + " <p>Cac ban nhap ten roi se co cac ket qua thu vi khac nhau</p>"
+      + " <p>Ma ki nang cua tui con rat yeu, nen chi duoc nhu the nay thoi!>_<</p>"
+      + " <p>Nhung mong la cac ban thay thich^^</p>"
+      + "<p> Mot lan nua, cam on cac ban!!</p>"
+    }
+    else if(name == "NguyenMinhMan" )
+    {
+        document.getElementById("result").innerHTML =
+          "<p> Hihi, day la tui!^^</p>"
+       +  "<p> Tui cung xin duoc gioi thieu</p>"
+       +  "<p> Tui dang la 1 nguoi hoc IT, lap trinh"
+       +  "<p> Day la lan dau tui lam ra 1 web nhu the nay</p>"
+       +  "<p> Tui chi mong la no co the mang lai niem vui cho cac ban</p>"
+       +  "<h3> Do se la dong luc cho tui!</h3> " 
+       +  "<h2> Rat cam on cac ban da tham gia<3</h2>"
     }
     else{
         
         document.getElementById("result"
         ).innerHTML = 
-        "<h2>Cam on ban da tham gia!</h2>"
-        + "Chuc ban mot ngay tot lanh!"
+        "<h2>Cam on ban da tham gia nhee!</h2>"
+        + "<p>Chuc ban mot ngay tot lanh!</p>"
+        + "<h3>Cac ban thu nhap lai ten nay nhe:</h3><h4>Loki</h4>"
       }
 
 }
