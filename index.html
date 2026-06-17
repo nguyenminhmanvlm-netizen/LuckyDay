@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lucky Day</title>
+    <style>
+
+        body{
+            background-color: lightblue;
+            text-align:center;
+            font-family:Arial;
+            margin-top:100px;
+        }
+
+        input{
+            padding:10px;
+        }
+
+        button{
+            padding:10px;
+            margin-left:10px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <h1> A Message From The Universe </h1>
+    <p>Cac ban nhap ten ben duoi nhee!:</p>
+    <p>(Hong cach & hong dau nhe)</p>
+    <p> Vi du: TrinhTranPhuongTuan</p>
+  <input id="name">
+
+<button onclick="showMessage()">
+    Xem ket qua
+</button>
+
+<p id="result"></p>
+
+<script>
+
+function showMessage() {
+
+    let name = document.getElementById("name").value;
+    if (name == "PhamThiYenNgoc" )
+    {
+        document.getElementById("result").innerHTML =
+        " <h2> Wow, chuc mung ban!</h2> " 
+        + "Ban se nhan duoc 1 phan qua nho nho cua bon tui!"
+        + "Lien he voi bon tui som nhe! Cam on ban!^^";
+    }
+    else if (name == "NguyenDuyLuan") {
+        
+        document.getElementById("result"
+        ).innerHTML = 
+        "<h2>Cam on ban da tham gia!</h2>"
+        +"Nho song that tot voi nhung nguoi quan trong voi ban nhe!"
+        +"<h2> Nhu ban Nguyen Minh Man a</h2>" ;
+      }
+     else {
+
+        document.getElementById("result").innerHTML =
+        "🌷 Chúc bạn một ngày vui vẻ! Cảm ơn bạn đã tham gia nhee!!";
+
+    }
+
+}
+
+</script>
+</body>
+
+</html>
